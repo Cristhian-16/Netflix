@@ -1,0 +1,144 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fondo-image {
+  position: relative;
+  height: 680px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-bottom: 10px solid #222;
+}
+.fondo-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(/src/assets/netflix.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.nav-bar {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.netflix-svg {
+  width: 150px;
+}
+.netflix-svg path {
+  fill: red;
+}
+
+.div-inicio__sesion {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.div-inicio__sesion a {
+  color: #f2f2f2;
+  background-color: rgb(224, 10, 10);
+  font-size: 15px;
+  padding: 5px 15px;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+.div-inicio__sesion a:hover {
+  background-color: rgb(172, 5, 5);
+}
+
+.select {
+  color: #f2f2f2;
+  background-color: transparent;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  padding: 8px 10px;
+}
+
+.select select {
+  width: 100%;
+  background-color: transparent;
+  color: #f2f2f2;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Mensaje Principal */
+
+.container__page {
+  max-width: 980px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+.title_page {
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.title_page h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.title_page p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.form_page {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form_page input {
+  width: 400px;
+  padding: 20px;
+  background-color: rgba(32, 32, 32, 0.8);
+  color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.form_page input::placeholder {
+  color: #f2f2f2;
+}
+
+.form_page button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  background-color: rgb(226, 17, 17);
+  border: none;
+  color: #f2f2f2;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form_page button:hover {
+  background-color: #b50000;
+}
